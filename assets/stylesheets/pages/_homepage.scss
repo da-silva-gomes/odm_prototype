@@ -1,0 +1,12 @@
+header {
+    a {
+        text-decoration: none;
+        color: $black;
+        
+        &.logo {
+            p {
+                @include serif_font(3);
+            }
+        }
+    }
+}

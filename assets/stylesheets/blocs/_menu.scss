@@ -115,19 +115,20 @@ input ~ nav {
             padding-left: 2rem;
 
             a {
-                @include base_font(700, 4.0);
+                @include base_font(700, 6.0);
                 color: $white;
                 display: block;
-                padding: 4rem 0 1.4rem 0;
+                padding: 4rem 0 1.4rem 2rem;
+                text-transform: uppercase;
                 
                 @include phablet() {
                     font-size: 4rem;
-                    padding: 4.2rem 0 3.4rem 0;
+                    padding: 4.2rem 0 3.4rem 2rem;
                 }
 
                 @include tablet() {
                     font-size: 8rem;
-                    padding: 4.2rem 0 3.4rem 0;
+                    padding: 4.2rem 0 3.4rem 2rem;
                 }
                 
                 &:hover {

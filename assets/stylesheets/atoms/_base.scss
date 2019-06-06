@@ -19,7 +19,7 @@ body {
 }
 
 h1 {
-  @include serif_font(400, 3.5);
+  @include serif_font(3.5);
   letter-spacing: -.05em;
   line-height: 120%;
 }
