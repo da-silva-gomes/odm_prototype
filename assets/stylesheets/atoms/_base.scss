@@ -19,9 +19,10 @@ body {
 }
 
 h1 {
-  @include serif_font(3.5);
+  @include base_font(700, 4.5);
   letter-spacing: -.05em;
   line-height: 120%;
+  text-transform: uppercase;
 }
 
 h2 {

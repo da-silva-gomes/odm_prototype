@@ -1,0 +1,43 @@
+main {
+    .exb_sections {
+        display: grid;
+        grid-template-rows: repeat(6, auto);
+        grid-template-columns: 100px repeat(4, 1fr);
+        grid-template-areas: "a b b c c"
+                             "a b b c c"
+                             "a b b c c"
+                             "a b b c c"
+                             "a b b c c"
+                             "a d d d d";
+        margin-top: 6rem;
+
+        h1 {
+            &.vertical {
+                grid-area: a;
+                height: fit-content;
+                width: 450px;
+                transform: translate(-200px, 70px) rotate(-90deg);
+            }
+
+            &.date {
+                grid-area: d;
+                text-align: right;
+            }
+        }
+
+        p {
+            grid-area: c;
+        }
+
+        img {
+            &.exb_map {
+                grid-area: b;
+                width: 90%;
+            }
+
+            &.photo_grid {
+                width: 90%;
+            }
+        }
+    }
+}
