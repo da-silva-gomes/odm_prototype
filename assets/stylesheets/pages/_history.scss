@@ -16,6 +16,10 @@ main {
                 grid-area: a;
                 height: fit-content;
                 width: 450px;
+                transform: translate(-200px, 170px) rotate(-90deg);
+            }
+
+            &.position_change3 {
                 transform: translate(-200px, 70px) rotate(-90deg);
             }
 
@@ -34,10 +38,59 @@ main {
                 grid-area: b;
                 width: 90%;
             }
+        }
+    }
 
-            &.photo_grid {
-                width: 90%;
+    .exb_photos {
+        display: grid;
+        grid-template-rows: repeat(4, auto);
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-areas: "b b b b b"
+                             "b b b b b"
+                             "c c c c c"
+                             "c c c c c";
+
+
+        .photo_grid {
+            display: grid;
+            grid-template-rows: repeat(4, auto);
+            grid-template-columns: 100px repeat(2, 1fr);
+            grid-template-areas: "a b b"
+                                 "a b b"
+                                 "a c c"
+                                 "a c c";
+            margin-top: 6rem;
+
+            h1 {
+                &.vertical {
+                    grid-area: a;
+                    height: fit-content;
+                    width: 450px;
+                    transform: translate(-200px, 70px) rotate(-90deg);
+
+                    &.position_change {
+                        transform: translate(-200px, 30px) rotate(-90deg);
+                    }
+
+                    &.position_change2 {
+                        transform: translate(-200px, -70px) rotate(-90deg);
+                    }
+                }
             }
+
+            img {
+                &.photo {
+                    width: 90%;
+                }
+            }
+        }
+
+        .photo_calendar {
+            grid-area: b;
+        }
+
+        .photo_poster {
+            grid-area: c;
         }
     }
 }
