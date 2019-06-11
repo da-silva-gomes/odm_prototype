@@ -19,7 +19,7 @@ class MonitorHandler(PatternMatchingEventHandler):
 
     def on_modified(self, event):
         print("Adding files to git")
-        self.git.add('.')
+        self.git.add('./')
         print("Commiting files to git")
         self.git.commit('-m', 'Added new image')
         print("Pushing files to remote repository")
