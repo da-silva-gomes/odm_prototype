@@ -29,7 +29,7 @@ python-jsonrpc-server==0.1.2
 python-language-server==0.26.1
 pywal==3.3.0
 PyYAML==3.13
-rsa==3.4.2
+rsa==4.1
 s3transfer==0.2.0
 six==1.11.0
 smmap2==2.0.5
